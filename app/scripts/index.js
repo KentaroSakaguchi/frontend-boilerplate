@@ -2,4 +2,4 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-import './modules/reactInit/reactInit';
+import './components/Button2/Button2';
