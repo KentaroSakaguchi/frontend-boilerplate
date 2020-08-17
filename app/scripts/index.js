@@ -2,4 +2,4 @@
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
-import './components/Button2/Button2';
+import './components/Counter/Counter';
