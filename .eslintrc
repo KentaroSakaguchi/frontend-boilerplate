@@ -2,7 +2,6 @@
   "env": {
     "browser": true
   },
-  "parser": "vue-eslint-parser",
   "parserOptions": {
     "parser": "babel-eslint",
     "ecmaFeatures": {
@@ -10,10 +9,9 @@
     }
   },
   "plugins": [
-    "vue",
     "react"
   ],
-  "extends": ["standard", "plugin:vue/strongly-recommended"],
+  "extends": ["standard"],
   "settings": {
     "react": { // https://www.npmjs.com/package/eslint-plugin-react
       "createClass": "createReactClass", // Regex for Component Factory to use,
