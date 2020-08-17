@@ -1,6 +1,5 @@
 /**
- * @file test.jsx
- * React testファイル
+ * @file Button2.jsx
  */
 
 import React, { useState } from 'react'; // https://ja.reactjs.org/docs/hooks-intro.html
@@ -11,7 +10,7 @@ const Button = styled.button`
   color: ${(props) => props.primary}
 `;
 
-const Counter = () => {
+export const Counter = () => {
   const [count, setCount] = useState(0);
   return (
     <Button
@@ -24,5 +23,5 @@ const Counter = () => {
 };
 
 ReactDOM.render(
-  <Counter />, document.getElementById('js-react-test')
+  <Counter />, document.getElementById('js-app')
 );
