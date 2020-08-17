@@ -16,7 +16,7 @@
     "start": "npm run copy && npm run js:watch & npm run css:watch & npm run server",
     "dev": "npm run js:dev && npm run css:dev",
     "prd": "npm run copy:prd && npm run js:prd && npm run css:prd",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./dist -p 8080",
     "build-storybook": "build-storybook"
   },
   "repository": {

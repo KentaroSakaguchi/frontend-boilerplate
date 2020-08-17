@@ -3,3 +3,4 @@
  */
 
 import './components/test';
+import './components/Button/Button';
