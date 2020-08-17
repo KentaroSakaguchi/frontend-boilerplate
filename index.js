@@ -23,7 +23,7 @@ const sassAddedInfo = {
   env: process.env.NODE_ENV, // 環境変数(package.jsonで定義している)
   dir: './app/styles/', // コンパイル対象のディレクトリ名
   file: './app/styles/index.scss', // コンパイルするファイル名
-  outFile: '.dist/index.css', // 出力するファイル名
+  outFile: process.env.NODE_ENV === 'development' ? '.dist/index.css' : 'build/index.css', // 出力するファイル名
   sourceMap: process.env.NODE_ENV === 'development' ? true : false, // ソースマップの有無(開発時:あり 本番(stg):なし)
   sourceMapEmbed: process.env.NODE_ENV === 'development' ? true : false, // ソースマップの有無(開発時:あり 本番(stg):なし)
 };

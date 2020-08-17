@@ -24,5 +24,5 @@ const Counter = () => {
 };
 
 ReactDOM.render(
-  <Counter />, document.getElementById('js-react-test')
+  <Counter />, document.getElementById('js-app')
 );
