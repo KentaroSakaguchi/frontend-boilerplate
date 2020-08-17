@@ -2,7 +2,6 @@
  * @file webpack.config.js
  */
 
-const { VueLoaderPlugin } = require('vue-loader');
 const webpackAddedInfo = require('../index').webpackAddedInfo;
 
 const modeOption = webpackAddedInfo.env;
@@ -25,7 +24,7 @@ const webpackConfig = [
         // eslintの設定
         {
           enforce: 'pre',
-          test: /\.(js|jsx|vue)$/,
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           loader: 'eslint-loader'
         },
@@ -52,34 +51,12 @@ const webpackConfig = [
             include: /node_modules/,
             exclude: webpackAddedInfo.exclude,
           }
-        },
-
-        // vue,jsで必要なloder
-        {
-          test: /\.vue$/,
-          loader: 'vue-loader'
-        },
-        {
-          test: /\.css$/,
-          use: ['vue-style-loader', 'css-loader']
-        },
-        {
-          test: /\.scss$/,
-          use: ['vue-style-loader', 'css-loader', 'sass-loader']
-        },
-        {
-          test: /\.pug$/,
-          loader: 'pug-plain-loader'
-        },
+        }
       ]
     },
 
     resolve: { // 下記の拡張子のentryからimportされているファイルをくっつける
-      extensions: ['.js', '.jsx', '.vue'],
-      alias: {
-        // vue-template-compilerに読ませてコンパイルするために必要
-        vue$: 'vue/dist/vue.esm.js',
-      }
+      extensions: ['.js', '.jsx'],
     },
 
     optimization: { // ライブラリを別ファイルでまとめる
@@ -87,11 +64,7 @@ const webpackConfig = [
         name: 'lib',
         chunks: 'initial'
       }
-    },
-
-    plugins: [
-      new VueLoaderPlugin()
-    ]
+    }
   }
 ];
 

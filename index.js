@@ -12,7 +12,7 @@ const webpackAddedInfo = {
   entry: {
     app: './app/scripts', // トランスパイルするディレクトリ名
   },
-  output: path.resolve(__dirname, '.dist'), // jsの出力先
+  output: path.resolve(__dirname, process.env.NODE_ENV === 'development' ? '.dist' : 'build'), // jsの出力先
   exclude: [] // node_modulesライブラリでトランスパイルする必要な物がある場合はここに記述
 };
 
