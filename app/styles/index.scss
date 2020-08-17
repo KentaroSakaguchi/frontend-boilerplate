@@ -1,0 +1,6 @@
+// https://sass-lang.com/documentation/at-rules/use
+@use '../../node_modules/destyle.css/destyle.css';
+@use './common/base';
+
+// https://sass-lang.com/documentation/at-rules/import
+@import './blocks/*';

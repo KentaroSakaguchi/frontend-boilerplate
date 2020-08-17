@@ -1,0 +1,55 @@
+/* ====== mixin ===== */
+// https://sass-lang.com/documentation/at-rules/mixin
+
+@mixin fz($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) * 1rem;
+}
+
+@mixin abs-center($top: 0, $right: 0, $bottom: 0, $left: 0) {
+  margin: auto;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+@mixin background-image($image_name) {
+  background-image: url($image_dir + $image_name);
+}
+
+/* sp表示用 メディアクエリ(max-width: 768px) */
+@mixin display_sp {
+  @media ( max-width: 768px ) {
+    @content;
+  }
+}
+
+/* pc表示用 メディアクエリ (min-width: 769px) */
+@mixin display_pc {
+  @media ( min-width: 769px ) {
+    @content;
+  }
+}
+
+/* タブレット表示用 メディアクエリ (min-width: 769px) */
+@mixin display_tb {
+  @media ( min-width: 769px ) and ( max-width: 1024px ) {
+    @content;
+  }
+}
+
+/* イレギュラー表示用 メディアクエリ (max-width: $device_width) */
+@mixin display_max_device($device_width) {
+  @media ( max-width: $device_width ) {
+    @content;
+  }
+}
+
+/* イレギュラー表示用 メディアクエリ (min-width: $device_width) */
+@mixin display_min_device($device_width) {
+  @media ( min-width: $device_width ) {
+    @content;
+  }
+}

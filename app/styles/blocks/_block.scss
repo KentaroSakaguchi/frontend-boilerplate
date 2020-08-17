@@ -1,0 +1,16 @@
+@use '../config/config';
+@use '../config/mixin';
+
+.block {
+  &__inner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: sticky;
+    color: config.$green_1;
+
+    @include mixin.display_sp {
+      width: 80%;
+    }
+  }
+}

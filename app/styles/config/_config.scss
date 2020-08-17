@@ -1,0 +1,64 @@
+/* stylelint-disable */
+
+/* ====== config 設定 ===== */
+// https://sass-lang.com/documentation/variables
+
+/* 画像path */
+$image_dir: '/src/images/corp/'; // image画像ディレクトリ名
+
+/* font */
+$font-smoothing: antialiased;
+$text-rendering: auto;
+$base-font-family: Verdana,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+
+/* breakpoints */
+$tablet:  'screen and (max-width:1024px)';
+$sp:  'screen and (max-width:680px)';
+
+/* base */
+$base_font: #595959;
+$base_background: #f9f9f9;
+$base_border: #d0d0d0;
+
+/* colors */
+$navy_1: #294c7a; // ヘッダーの背景色 コーポレートカラー
+$navy_2: #34619c; // ボーダー
+
+$blue_1: #2c98b5; // 初期メッセージの太字
+$blue_2: #2c9ab7; // menuのcurrent背景色
+$blue_3: #428bc9; // 青ボタンの背景色
+$blue_4: #348cda; // 素材ダウンロードボタンの背景色
+$blue_5: #357ebd;
+
+$light-blue_1: #b1e0ec; // 初期メッセージの背景色
+$light_blue_2: #41b6d5; // menuの背景色hover
+
+$green_1: #72c1b0; // スタートガイドのタイトル
+$green_2: #119330; // 青ボタンの背景色hover
+
+$yellow_1: #ffc; // スタートガイドの背景色hover
+
+$dark-grey_1: #4e5665; // 白ボタンのフォント
+$dark-grey_2: #333; // 白ボタンのフォントhover
+
+$light-grey_1: #eee; // スタートガイドタイトルの背景色
+$light-grey_2: #777; // menuの文字色
+$light-grey_3: #f4f4f4; // 白ボタンの背景色
+$light-grey_4: #f0f0f0; // 白ボタンの背景色hover
+$light-grey_5: #e5e5e5; // おすすめプレスリリースのボーダー
+$light-grey_6: #dcdcdc; // menuのボーダー
+$light-grey_7: #cfcfcf; // ヒント
+$light-grey_8: #f2f2f2; // サイドメニューの背景色
+$light-grey_9: #e8e8e8; // サイドメニュー展開メニューホバー時の背景色
+$light-grey_10: #f6f6f6; // ダウンロードボタン背景色
+
+$white_1: #fff;
+
+$black_1: #000;
+
+/* transition */
+$transition_nomarl: .3s;
+$transition_fast: .15s;
+
+/* z-index */
+$z-index_modal: 1000;

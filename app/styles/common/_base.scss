@@ -1,0 +1,28 @@
+/* stylelint-disable */
+
+@use '../config/config';
+
+/* ====== _base.scss ===== */
+
+$user_base_font_color: #3b3b3b;
+$user_base_font_family: YuGothic, Meiryo, system-ui, sans-serif;
+$gothic-font-family: YuGothic, '游ゴシック体', Yu Gothic, '游ゴシック', 'メイリオ', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+$mincho-font-family: YuMincho, Yu Mincho, serif;
+$user_content_max_width: 1176px;
+$detail_content_max_width: 1032px;
+$image_dir: '/src/images/story/'; // image画像ディレクトリ名
+
+$button_hover_color: #b5fbee;
+$text_hover_color: #23e8c4;
+
+html {
+  font-size: 62.5%;
+  font-family: $user_base_font_family;
+  width: 100%;
+  line-height: initial;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: config.$font-smoothing;
+  text-rendering: config.$text-rendering;
+  color: $user_base_font_color;
+  background-color: config.$white_1;
+}
