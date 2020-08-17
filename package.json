@@ -15,7 +15,9 @@
     "css:prd": "cross-env NODE_ENV=production node ./node_scripts/sass.config.js",
     "start": "npm run copy && npm run js:watch & npm run css:watch & npm run server",
     "dev": "npm run js:dev && npm run css:dev",
-    "prd": "npm run copy:prd && npm run js:prd && npm run css:prd"
+    "prd": "npm run copy:prd && npm run js:prd && npm run css:prd",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,10 @@
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
+    "@storybook/addon-actions": "^6.0.10",
+    "@storybook/addon-essentials": "^6.0.10",
+    "@storybook/addon-links": "^6.0.10",
+    "@storybook/react": "^6.0.10",
     "autoprefixer": "^9.8.4",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
@@ -65,6 +71,7 @@
     "postcss-hexrgba": "^2.0.1",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.0.0",
+    "react-is": "^16.13.1",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.0",
     "stylelint": "^13.6.1",
